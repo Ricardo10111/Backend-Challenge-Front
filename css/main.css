@@ -1,0 +1,978 @@
+.header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 1px rgba(24, 26, 27, 0.1);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 56px;
+  z-index: 100;
+  display: block;
+}
+.header .insideHeader {
+  max-width: 1280px;
+  padding: 0, 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 56px;
+}
+.header .insideHeader .siteLogo {
+  max-width: 200px, 125px;
+  font-size: 1.25rem, 1rem;
+  font-weight: 700, 500;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  vertical-align: middle;
+  color: #090909;
+  text-decoration: none;
+  letter-spacing: -0.02rem;
+  line-height: 1;
+  outline: 0;
+}
+.header .insideHeader .siteLogo .siteLogoImg {
+  width: 50px;
+  height: 40px;
+  height: calc(var(--header-height) - var(--su-2) * 2);
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+  outline: 0;
+}
+.header .insideHeader .imgDev {
+  height: 90%;
+  max-width: 420px;
+  flex: auto;
+}
+.header .insideHeader .imgDev .imgDev_2 {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header .insideHeader .imgDev .imgDev_2 .imgDev_3 {
+  display: flex;
+  flex-flow: column;
+  font-size: 1rem;
+  position: relative;
+  height: 90%;
+  flex: 1 1 0%;
+  justify-content: center;
+}
+.header .insideHeader .imgDev .imgDev_2 .imgDev_3 .inputInside {
+  height: 38px;
+  padding: 1px 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(212, 212, 212);
+  border-radius: 0.375rem;
+  transition: all cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+}
+.header .insideHeader .imgDev .imgDev_2 .imgDev_3 .c-Button {
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  left: auto;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: rgba(59, 73, 223, 0.1);
+  display: inline-block;
+  font: inherit;
+  text-align: center;
+  border: none;
+  overflow-wrap: normal;
+}
+.header .insideHeader .imgDev .imgDev_2 .imgDev_3 .c-Button:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  color: rgba(59, 73, 223, 0.1);
+  border-radius: 0.375rem rgba(59, 73, 223, 0.1);
+  cursor: pointer;
+}
+.header .insideHeader .logAccoNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 14.5em;
+  gap: 3%;
+  margin-left: auto;
+}
+.header .insideHeader .logAccoNav .aLogIn {
+  text-align: center;
+  padding-top: 7px;
+  color: black;
+  text-decoration: none;
+  width: 27%;
+  height: 80%;
+}
+.header .insideHeader .logAccoNav .aLogIn:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  border: 1px solid rgba(59, 73, 223, 0.1);
+  border-radius: 0.375rem;
+  color: blue;
+  text-decoration: underline blue;
+}
+.header .insideHeader .logAccoNav .aCreaAco {
+  text-decoration: none;
+  border: 1px solid rgb(59, 73, 223);
+  border-radius: 0.375rem;
+  color: rgb(59, 73, 223);
+  padding-top: 7px;
+  text-align: center;
+  height: 80%;
+  width: 67%;
+}
+.header .insideHeader .logAccoNav .aCreaAco:hover {
+  background-color: rgb(59, 73, 223);
+  text-decoration: underline white;
+  color: white;
+  border: 1px solid rgb(59, 73, 223);
+}
+
+.containerMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 70px;
+}
+.containerMain .aside {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.containerMain .aside2 {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.containerMain .mainContainer {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .inputInside {
+    display: block;
+  }
+  .containerMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .containerMain .aside {
+    height: 100vh;
+    max-width: 300px;
+    display: block;
+  }
+  .containerMain .aside2 {
+    height: 100vh;
+    max-width: 50%;
+    display: none;
+  }
+  .containerMain .mainContainer {
+    height: 100vh;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .inputInside {
+    display: block;
+  }
+  .containerMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .containerMain .aside {
+    margin-left: 70px;
+    height: 100vh;
+    max-width: 275px;
+    display: block;
+  }
+  .containerMain .aside2 {
+    margin-right: 70px;
+    height: 100vh;
+    max-width: 400px;
+    display: block;
+  }
+  .containerMain .mainContainer {
+    height: 100vh;
+    max-width: 39em;
+  }
+  .emojisAndComments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 10px;
+  }
+  .emojisAndComments .emojis {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    height: 40px;
+    width: 167px;
+  }
+  .emojisAndComments .emojis .insideEmoji {
+    margin: -6px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
+  }
+  .emojisAndComments .emojis .reactionCounter {
+    margin-left: 0.5rem;
+  }
+  .emojisAndComments .emojis .reactionCounter .reactionCounter_2 {
+    display: block;
+  }
+  .emojisAndComments .emojis:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 0.375rem;
+  }
+  .emojisAndComments .commentsPostOneDiv {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    height: 40px;
+    width: 120px;
+  }
+  .emojisAndComments .commentsPostOneDiv .commentsPostOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+  }
+  .emojisAndComments .commentsPostOneDiv .commentsPostOne .crayons-icon {
+    margin-right: 5px;
+  }
+  .emojisAndComments .commentsPostOneDiv .commentsPostOne .commentsPostOneBottom {
+    display: inline;
+    font-size: 0.9em;
+    display: block;
+  }
+  .emojisAndComments .commentsPostOneDiv:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.035);
+    border-radius: 0.375rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerAside1 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  gap: 1em;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(40, 44, 45, 0.05);
+  min-height: 15em;
+  width: 95%;
+  padding: 10px;
+}
+.containerAside1 .textInside {
+  position: relative;
+  padding: 1px;
+  width: 100%;
+  max-height: 20em;
+}
+.containerAside1 .textInside .pBold {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.25rem;
+}
+.containerAside1 .textInside_2 {
+  padding: 1px;
+  width: 100%;
+  max-height: 20em;
+  display: flex;
+  flex-direction: column;
+}
+.containerAside1 .btnInside {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-height: 20em;
+}
+.containerAside1 .btnInside .aInside {
+  display: flex;
+  width: 100%;
+}
+.containerAside1 .btnInside .aCAccount {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  color: rgb(59, 73, 223);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  padding: 11px 2.5em;
+  border: 1px solid rgb(59, 73, 223);
+  width: 100%;
+}
+.containerAside1 .btnInside .aCAccount:hover {
+  text-align: center;
+  background-color: rgb(59, 73, 223);
+  text-decoration: underline white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  color: white;
+  border-radius: 0.375rem;
+  padding: 11px 2.5em;
+  border: 1px solid rgb(59, 73, 223);
+  width: 100%;
+}
+.containerAside1 .btnInside .aLogIn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  padding: 11px 2.5em;
+  border: none;
+}
+.containerAside1 .btnInside .aLogIn:hover {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: blue;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.secondNav {
+  display: block;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
+}
+.secondNav h2 {
+  padding-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.secondNav .listNavSecond {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1em;
+}
+.secondNav .c-link {
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+.secondNav .c-link:hover {
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline blue;
+  color: blue;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.containerAsideSocialMedia {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.conteinerAsideScroll {
+  margin-top: 20px;
+}
+
+.conteinerScroll {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  padding-left: 30px;
+  max-height: 42vh;
+  max-width: 250px;
+  overflow-y: auto;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.conteinerScroll .bar-element {
+  width: 100%;
+}
+.conteinerScroll .bar-element .aElement {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  text-decoration: none;
+  width: 100%;
+  height: 2.6em;
+  border-radius: 0.375rem;
+  font-size: 15px;
+  color: black;
+}
+.conteinerScroll .bar-element .aElement:hover {
+  color: blue;
+  border-radius: 0.375rem;
+  background-color: rgba(59, 73, 223, 0.1);
+  text-decoration: underline;
+}
+
+.containerAside_2 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  gap: 1em;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgba(40, 44, 45, 0.05);
+  min-height: 15em;
+  width: 95%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.containerAside_2 img {
+  margin-left: 25px;
+  width: 80%;
+  height: 80%;
+}
+.containerAside_2 .textInside {
+  position: relative;
+  padding: 1px;
+  max-width: 80%;
+  max-height: 20em;
+}
+.containerAside_2 .textInside .pBold {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+}
+.containerAside_2 .textInside_2 {
+  padding: 1px;
+  max-width: 80%;
+  max-height: 20em;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerAside_3 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1em;
+  border-radius: 10px;
+  background-color: transparent;
+  min-height: 20em;
+  min-width: 300px;
+  margin: 10px 10px;
+  padding: 10px;
+}
+.containerAside_3 .textInside_2 {
+  padding: 1px;
+  max-width: 80%;
+  max-height: 20em;
+  display: flex;
+  flex-direction: column;
+}
+.containerAside_3 .textInside_2 a {
+  text-decoration: none;
+  color: blue;
+}
+
+.aside2 {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+}
+
+.container-right {
+  border: 3px solid rgb(228, 225, 228);
+  background-color: white;
+  margin: 0px 0px 20px 20px;
+  border-radius: 10px;
+}
+.container-right .title-h2 {
+  font-size: 1.25rem;
+  color: #404040;
+}
+
+.discuss {
+  padding: 10px 25px 10px 25px;
+}
+.discuss .themes {
+  border-bottom: 1px solid rgb(205, 202, 202);
+  margin: 15px 0px 15px 0px;
+}
+.discuss .themes .text-title {
+  font-size: 20px;
+}
+.discuss .themes .text-title:hover {
+  color: blue;
+}
+.discuss .themes a {
+  text-decoration: none;
+  color: #404040;
+}
+.discuss .themes a:hover {
+  color: blue;
+}
+.discuss .themes a:hover p {
+  color: #404040;
+}
+.discuss .themes h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.discuss .themes p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.discuss .sinBorde {
+  border: none;
+}
+
+.container-guides {
+  margin: 0px 0px 20px 20px;
+  border-radius: 10px;
+  padding: 10px 25px 10px 25px;
+}
+.container-guides .container-trending {
+  margin: 15px 0px 15px 0px;
+}
+.container-guides .container-trending h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.container-guides .guides {
+  padding-left: 25px;
+}
+.container-guides .guides p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #404040;
+}
+.container-guides .guides a {
+  text-decoration: none;
+}
+.container-guides .guides div:hover {
+  background-color: white;
+  color: blue;
+}
+.container-guides .guides p:hover {
+  color: blue;
+}
+.container-guides hr {
+  margin: 25px 0px -25px 0px;
+}
+
+#title-section-trending {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.headerPosts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+#calendar {
+  height: 3em;
+  width: 20em;
+}
+
+.navMainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1em;
+  border-radius: 10px;
+  padding: 10px;
+}
+.navMainContent li {
+  list-style: none;
+  padding: 10px;
+  background-color: transparent;
+}
+.navMainContent li:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15%;
+  color: rgb(57, 57, 228);
+  cursor: pointer;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border: rgb(228, 225, 228) 2px solid;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin: 20px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  gap: 1em;
+}
+.mainBox .dateContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 14em;
+  margin-left: 15px;
+}
+.mainBox .dateContainer .imagenProfile {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+.mainBox .dateContainer .nameDateContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.mainBox .dateContainer .pDate {
+  font-size: 12px;
+  font-weight: 300;
+  color: #3d3d3d;
+}
+.mainBox .dateContainer .pName {
+  color: #3d3d3d;
+  font-weight: 400;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.mainBox .dateContainer .pName:hover {
+  transition: 300ms ease-in-out;
+  color: black;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+.mainBox .containerH2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 75px;
+}
+.mainBox .containerH2 .h2Post {
+  font-size: 30px;
+  font-weight: bold;
+}
+.mainBox .containerH2 .h2Post:hover {
+  cursor: pointer;
+  color: #3b49df;
+}
+.mainBox .containerHashtags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2px;
+  margin-left: 75px;
+}
+.mainBox .containerHashtags .hash1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3d3d3d;
+  font-size: 14.5px;
+  border-radius: 0.375rem;
+  height: 30px;
+  width: 120px;
+}
+.mainBox .containerHashtags .hash1:hover {
+  cursor: pointer;
+  background-color: rgba(59, 73, 223, 0.1);
+  border: 1px solid #3b49df;
+  border-radius: 0.375rem;
+}
+.mainBox .containerHashtags .hash2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3d3d3d;
+  font-size: 14.5px;
+  border-radius: 10px;
+  height: 30px;
+  width: 120px;
+}
+.mainBox .containerHashtags .hash2:hover {
+  cursor: pointer;
+  background-color: rgba(255, 102, 237, 0.1);
+  border: 1px solid #ff66ed;
+  border-radius: 0.375rem;
+}
+.mainBox .containerHashtags .hash3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3d3d3d;
+  font-size: 14.5px;
+  border-radius: 10px;
+  height: 30px;
+  width: 120px;
+}
+.mainBox .containerHashtags .hash3:hover {
+  cursor: pointer;
+  background-color: rgba(42, 7, 152, 0.1);
+  border: 1px solid #2A0798;
+  border-radius: 0.375rem;
+}
+.mainBox .containerDown {
+  display: flex;
+  flex-direction: row;
+  margin-left: 65px;
+}
+.mainBox .containerDown .iconsReactionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+}
+.mainBox .containerDown .iconsReactionContainer:hover {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+}
+.mainBox .containerDown .iconsReactionContainer .iconsReaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.mainBox .containerDown .iconsReactionContainer .iconsReaction .icons {
+  margin: -2.5px;
+  margin-bottom: 5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+}
+.mainBox .containerDown .iconsReactionContainer .containerReactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.mainBox .containerDown .iconsReactionContainer .containerReactions .pNumReactions {
+  color: #3d3d3d;
+  font-size: 14.5px;
+}
+.mainBox .containerDown .commentsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.mainBox .containerDown .commentsContainer:hover {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
+}
+.mainBox .containerDown .commentsContainer .pNumComments {
+  color: #3d3d3d;
+  font-size: 14.5px;
+}
+.mainBox .containerDown .commentsContainer .imgComents {
+  width: 25px;
+  height: 22px;
+  margin-right: 10px;
+}
+.mainBox .containerDown .btnDeleteConteiner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.mainBox .containerDown .btnDeleteConteiner .btnDelete {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mainBox .containerDown .btnDeleteConteiner .btnDelete:hover {
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+.mainBox .containerDown .btnDeleteConteiner .imagButtonDlt {
+  height: 100%;
+  width: 100%;
+}
+
+.imagen {
+  border-radius: 2px;
+}
+
+.descriptionContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 2em;
+}
+
+.noReults {
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.containerCalendar {
+  display: flex;
+  border: rgb(228, 225, 228) 2px solid;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.containerCalendar .btnRefresh {
+  color: red;
+  border: none;
+  margin-top: 12px;
+}
+.containerCalendar .btnRefresh:hover {
+  cursor: pointer;
+}
+.containerCalendar #calendar {
+  border: none;
+  width: 10em;
+  background-color: rgb(245, 245, 245);
+  margin-right: 10px;
+}
+.containerCalendar #calendar:hover {
+  border: none;
+}
+.containerCalendar .imgRefresh {
+  width: 1em;
+  height: 1em;
+}
+
+html,
+body {
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+#divContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 70em;
+  height: 50em;
+}
+
+#crud {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: rgb(228, 225, 228) 2px solid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  gap: 1em;
+  padding: 50px;
+}
+
+input {
+  height: 40px;
+  width: 60em;
+}
+
+select {
+  height: 40px;
+  width: 30em;
+}
+
+.h1Formulario {
+  color: black;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#buttomSubmit {
+  color: black;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=main.css.map */

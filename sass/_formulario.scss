@@ -1,0 +1,45 @@
+html,
+body {
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+#divContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  max-width: 70em;
+  height: 50em;
+}
+#crud {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: rgb(228, 225, 228) 2px solid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  gap: 1em;
+  padding: 50px;
+}
+input {
+  height: 40px;
+  width: 60em;
+}
+select {
+  height: 40px;
+  width: 30em;
+}
+.h1Formulario {
+  color: black;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+#buttomSubmit{
+color: black;
+}

@@ -1,0 +1,115 @@
+.aside2{
+    font-family: "Roboto", sans-serif;
+    line-height: 28px;
+
+}
+
+.container-right{
+        border: 3px solid rgb(228, 225, 228);
+        background-color: white;
+        margin: 0px 0px 20px 20px;
+        border-radius: 10px;
+
+        .title-h2{
+            font-size: 1.25rem;
+            color: #404040;
+            }
+        
+
+    }  
+
+    .discuss{
+            padding: 10px 25px 10px 25px;
+
+
+            .themes{
+                border-bottom: 1px solid rgb(205, 202, 202);
+                margin: 15px 0px 15px 0px;
+
+                .text-title{
+                    font-size: 20px;
+                    }
+
+                .text-title:hover{
+                    color: blue;
+                    }
+
+                a{
+                    text-decoration: none;
+                    color: #404040;
+                    //line-height: 28px;
+                }
+
+                a:hover{
+                    color: blue;
+                    p{
+                        color: #404040;
+                    }
+                }
+
+                h3{
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                }
+
+                p{
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                }
+
+            }
+
+            .sinBorde{
+                border: none;
+            }
+
+
+
+        }
+
+.container-guides{
+                margin: 0px 0px 20px 20px;
+                border-radius: 10px;
+                padding: 10px 25px 10px 25px;
+
+                .container-trending{
+                    margin: 15px 0px 15px 0px;
+
+                    h3{
+                        margin-top: 2px;
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .guides{
+                    padding-left: 25px;
+
+                    p{
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                        color: #404040;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+
+                    div:hover{
+                        background-color: white;
+                        color: blue;
+                    }
+
+                    p:hover{
+                        color: blue;
+                    }
+
+                }
+hr{
+    margin: 25px 0px -25px 0px;
+}
+            }
+
+#title-section-trending{
+                font-family: monospace;
+                font-size: 18px
+}

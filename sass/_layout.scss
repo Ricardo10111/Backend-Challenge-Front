@@ -1,0 +1,177 @@
+.containerMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+
+    .aside {
+        // border: 1px solid black;
+        height: 100vh;
+        width: 100%;
+        display: none;
+    }
+
+    .aside2 {
+        // border: 1px solid black;
+        height: 100vh;
+        width: 100%;
+        display: none;
+    }
+
+    .mainContainer {
+        // border: 1px solid black;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inputInside {
+        display: block;
+    }
+    .containerMain {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+        .aside {
+            height: 100vh;
+            max-width: 300px;
+            display: block;
+        }
+
+        .aside2 {
+            height: 100vh;
+            max-width: 50%;
+            display: none;
+        }
+
+        .mainContainer {
+            height: 100vh;
+            width: 60%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .inputInside {
+        display: block;
+    }
+    .containerMain {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+        .aside {
+            margin-left: 70px;
+            height: 100vh;
+            max-width: 275px;
+            display: block;
+        }
+
+        .aside2 {
+            margin-right: 70px;
+
+            height: 100vh;
+            max-width: 400px;
+            display: block;
+        }
+
+        .mainContainer {
+            height: 100vh;
+            max-width: 39em;
+        }
+    }
+
+   
+
+    .emojisAndComments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 10px;
+        // border: 1px solid black;
+
+        .emojis {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-left: 0.5rem;
+            // border: 1px solid black;
+            height: 40px;
+            width: 167px;
+            .insideEmoji {
+                margin: -6px;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                border: 2px solid rgb( 255, 255, 255 );
+                background-color: rgb( 245, 245, 245 );           
+            }
+            .reactionCounter {
+                margin-left: 0.5rem;
+                .reactionCounter_2{
+                    display: block;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.035) ;
+                border-radius: 0.375rem;
+
+            }
+
+            
+
+            
+        }
+
+      
+        .commentsPostOneDiv{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            margin-left: 0.5rem;
+            // border: 1px solid black;
+            height: 40px;
+            width: 120px;
+
+            .commentsPostOne {
+                // padding-left: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .9em;
+    
+                .crayons-icon {
+                    margin-right: 5px;
+                    
+                }
+    
+                .commentsPostOneBottom {
+                    display: inline;
+                    font-size: .9em;
+                    display: block;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.035) ;
+                border-radius: 0.375rem;
+
+            }
+            
+        }
+    }
+   
+}
