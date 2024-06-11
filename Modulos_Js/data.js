@@ -4,7 +4,7 @@ export const giveMeData = () => {
     .then((data) => data.data)
     .then((newData) => newData.posts)
     .then((newData) => {
-      console.log('Datos recibidos:', newData) // Verificar los datos recibidos
+      console.log('Datos recibidos:', newData)
       return newData
     })
     .catch((error) => {

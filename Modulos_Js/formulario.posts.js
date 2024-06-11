@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  //  Formulario
-
   const mainContainer = document.querySelector('body')
-  // Crear form y agragarlo al body
   const h1Formulario = document.createElement('h1')
   h1Formulario.className = 'h1Formulario'
   h1Formulario.textContent = 'Crea o modifica un Post!!!'
@@ -130,8 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
   buttomSubmit.value = 'Enviar'
   buttomSubmit.id = 'buttomSubmit'
   formulario.appendChild(buttomSubmit)
-
-  // Funcion para agregar la info a la API
 
   const form = document.querySelector('#crud')
   const token = localStorage.getItem('token')

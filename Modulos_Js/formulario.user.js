@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Crear y agregar formulario al body
   const mainContainer = document.querySelector('body')
 
   const h1Formulario = document.createElement('h1')
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   formulario.id = 'login-form'
   divContainer.append(formulario)
 
-  // Función para crear inputs
+  // F para crear inputs
   const inputFactory = (typeN, nameN, idName, placeHolder) => {
     const inputN = document.createElement('input')
     inputN.type = typeN
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return inputN
   }
 
-  // Agregar inputs al formulario
   formulario.append(
     inputFactory('email', 'email', 'email', 'Ingresa tu email'),
     inputFactory('password', 'password', 'password', 'Ingresa tu contraseña')
